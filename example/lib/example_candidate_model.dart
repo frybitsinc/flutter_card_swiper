@@ -5,12 +5,16 @@ class ExampleCandidateModel {
   final String job;
   final String city;
   final List<Color> color;
+  final int number;
+  final String category;
 
   ExampleCandidateModel({
     required this.name,
     required this.job,
     required this.city,
     required this.color,
+    required this.number,
+    required this.category,
   });
 }
 
@@ -20,23 +24,31 @@ final List<ExampleCandidateModel> candidates = [
     job: 'Developer',
     city: 'Areado',
     color: const [Color(0xFFFF3868), Color(0xFFFFB49A)],
+    number: 1,
+    category: 'one',
   ),
   ExampleCandidateModel(
     name: 'Two, 2',
     job: 'Manager',
     city: 'New York',
     color: const [Color(0xFF736EFE), Color(0xFF62E4EC)],
+    number: 2,
+    category: 'prime number',
   ),
   ExampleCandidateModel(
     name: 'Three, 3',
     job: 'Engineer',
     city: 'London',
     color: const [Color(0xFF2F80ED), Color(0xFF56CCF2)],
+    number: 3,
+    category: 'prime number',
   ),
   ExampleCandidateModel(
     name: 'Four, 4',
     job: 'Designer',
     city: 'Tokyo',
     color: const [Color(0xFF0BA4E0), Color(0xFFA9E4BD)],
+    number: 4,
+    category: 'composite number',
   ),
 ];
